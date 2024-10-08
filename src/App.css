@@ -1,42 +1,73 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.card-container{
+  display: flex;
+  width: 480px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden; /* Asegura que la imagen no se salga del contenedor */
+  margin: 0 auto; /* Centra el contenedor en pantallas más grandes */
+  max-width: 100%; /* Asegura que el contenedor no exceda el ancho de la pantalla */
+
+}
+.card-image-container{
+  width: 245px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  overflow: hidden; /* Hace que la imagen se ajuste sin distorsionarse */
+}
+.card-image1 {
+  width: 100%; /* La imagen ocupará el ancho completo del contenedor */
+  height: 100%;
+  object-fit: cover; /* Hace que la imagen se ajuste sin distorsionarse */
+}
+.card-image2 {
+  display: none; /* Oculta la imagen de móvil por defecto */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.sub-title{
+  color: var(--dark_grayish_blue);
+  font-size: 12px;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.card{
+  padding: 20px;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.sub-title{
+  letter-spacing: 5px;
+  font-size: 10px;
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.card-title{
+  font-size: 29px;
+  width: 160px;
+  font-weight: bolder ;
+  font-family: "Fraunces", serif;
+  line-height: 1;
+}
+.action-buttons{
+  position: relative;
+}
+@media (min-width: 375px) {
+  .card-image1 {
+    display: none; /* Oculta la imagen de escritorio en pantallas pequeñas */
   }
-  to {
-    transform: rotate(360deg);
+  .card-image-container{
+    width: 100%; /* La imagen de móvil ocupa el ancho completo del contenedor */
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 10px;
   }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  .card-image2 {
+    display: block; /* Muestra la imagen de móvil en pantallas pequeñas */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+  .card-container{
+    display: block;
+    width: 250px;
+    overflow: hidden; /* Asegura que la imagen no se salga del contenedor */
+  }
+  .card-title{
+    font-size: 28px;
+    width: 250px;
+  }
 }
