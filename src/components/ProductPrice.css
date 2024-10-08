@@ -1,0 +1,16 @@
+.prices{
+  display: flex;
+  font-family: "Fraunces", serif;
+  font-weight: bold;
+  color: var(--dark_cyan);
+  line-height: .3;
+}
+.prices p{
+  position: absolute;
+  right: 16%;
+  bottom: 60%;
+  text-decoration: line-through ;
+  font-weight: 100;
+  font-size: 13px;
+  color: hsl(228, 12%, 48%);
+}

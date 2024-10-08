@@ -1,0 +1,33 @@
+
+.service-type{
+  background-color: var(--dark_cyan);
+  padding: 1px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Centra los elementos horizontalmente */
+}
+.button-container {
+  text-align: center;
+}
+.change-button {
+  padding: 12px;
+  color: white;
+  background-color: transparent; /* El fondo no tendrá color */
+  border: transparent;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.icon-container {
+  text-align: center;
+}
+.icon_img{
+  width:13px;
+}
+.service-type:hover{
+  background-color: hsl(158, 36%, 23%);
+  cursor: pointer;
+}
+
