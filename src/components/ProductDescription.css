@@ -3,3 +3,11 @@
   color: var(--dark_grayish_blue);
   width: 190px;
 }
+@media (min-width: 375px){
+  .description{
+    font-size: 12px;
+    color: var(--dark_grayish_blue);
+    width: 210px;
+  }
+
+}
